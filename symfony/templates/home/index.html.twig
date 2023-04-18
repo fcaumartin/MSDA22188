@@ -4,7 +4,11 @@
 {% block body %}
 
 <div>
-    Coucou
+    {% for plat in liste %}
+        <div>
+            {{ plat.nom }}
+        </div>
+    {% endfor %}
 </div>
 
 {% endblock %}

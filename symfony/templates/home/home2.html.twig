@@ -4,7 +4,16 @@
 {% block body %}
 
 <div>
-    Home 2
+    <h1>Liste des catégories</h1>
+
+    {% for categorie in liste %}
+        <div>
+            <a href="/details3/{{categorie.id}}">
+                {{ categorie.nom }}
+            </a>
+        </div>
+        
+    {% endfor %}
 </div>
 
 {% endblock %}

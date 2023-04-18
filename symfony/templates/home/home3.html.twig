@@ -4,7 +4,13 @@
 {% block body %}
 
 <div>
-    Home 3
+    <h1> liste des plats de {{ categorie.nom }} </h1>
+
+    {% for plat in categorie.plats %}
+        <div>
+            {{ plat.nom }}
+        </div>
+    {% endfor %}
 </div>
 
 {% endblock %}
